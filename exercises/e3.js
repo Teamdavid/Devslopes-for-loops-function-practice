@@ -10,7 +10,13 @@
 
 export function getAverage(array) {
   // Your code goes here...
-
+  let elemCounter = 0
+  let elemRunningTotal = 0
+  for(let elem of array) {
+    elemCounter += 1;
+    elemRunningTotal += elem;
+  }
+  return elemRunningTotal / elemCounter;
 }
 
 
@@ -23,7 +29,12 @@ export function getAverage(array) {
 
 export function getStringSum(str) {
   // Your code goes here...
-
+  let allNums = str.replace(/\D/g, '');
+  let counter = 0;
+  for(let i = 0; i < allNums.length; i++) {
+    counter += Number(allNums[i]);
+  }
+  return counter;
 }
 
 
