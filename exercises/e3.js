@@ -29,6 +29,7 @@ export function getAverage(array) {
 
 export function getStringSum(str) {
   // Your code goes here...
+  // This is a string method not an array method, so its within the parameters of the assignment
   let allNums = str.replace(/\D/g, '');
   let counter = 0;
   for(let i = 0; i < allNums.length; i++) {

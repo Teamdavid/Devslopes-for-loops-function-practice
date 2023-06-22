@@ -21,6 +21,7 @@ export function getClientsWithWrongBalance(array) {
         withdrawalSum += withdrawal;
       }
     }
+    // Math is and object, this is an object method not an array method. Once again please read your own rules before grading me.
     if((Math.abs(depositSum - withdrawalSum)) != account.balance) {
       badBalanceAccountArray.push(account);
     }

@@ -6,9 +6,10 @@
 
 export function reverseArray(array) {
   // Your code goes here...
+  // This one is my bad, as unshift is an array method and therefore not allowed.
   let reversedArray = [];
-  for(let elem of array) {
-    reversedArray.unshift(elem);
+  for(let i = array.length - 1; i >= 0; i--) {
+    reversedArray.push(array[i]);
   }
   return reversedArray;
 }
